@@ -1,4 +1,4 @@
-package com.example.petphil;
+package com.example.petphil.testDebug;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,13 +7,15 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
+
+import com.example.petphil.R;
+import com.example.petphil.testDebug.AuthenticationCodeActivity;
+import com.example.petphil.testDebug.BetaIndexActivity;
 
 import okhttp3.FormBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
-import okhttp3.Response;
 
 public class PasswordLoginActivity extends AppCompatActivity {
 
@@ -34,7 +36,7 @@ public class PasswordLoginActivity extends AppCompatActivity {
 
     //跳转到authentication code
     public void authenticationCodeLogin(View v){
-        Intent intent = new Intent(getApplicationContext(),AuthenticationCodeActivity.class);
+        Intent intent = new Intent(getApplicationContext(), AuthenticationCodeActivity.class);
         intent.putExtra("phoneNumber",phoneNumber);
         startActivity(intent);
     }
@@ -69,7 +71,7 @@ public class PasswordLoginActivity extends AppCompatActivity {
                         editor.putBoolean("loginStatus",loginStatus);
                         editor.apply();
                         //跳转到首页
-                        Intent intent = new Intent(getApplicationContext(),BetaIndexActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), BetaIndexActivity.class);
                         startActivity(intent);
                     } else
                     {

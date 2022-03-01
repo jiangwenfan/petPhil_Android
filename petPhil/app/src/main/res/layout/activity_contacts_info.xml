@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="返回"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:text="用户昵称"
+            android:gravity="center"
+            android:background="@drawable/ic_launcher_background"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="7">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            >
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_launcher"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img"
+                android:padding="10dp"
+                android:id="@+id/user">
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="用户昵称" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/userName"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"
+                    android:text="男"/>
+            </RelativeLayout>
+
+            <TextView
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img"
+                android:layout_below="@id/user"
+                android:textSize="20dp"
+                android:text="用户id"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="编辑联系人"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="发送消息"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:textColor="#ff00ff"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

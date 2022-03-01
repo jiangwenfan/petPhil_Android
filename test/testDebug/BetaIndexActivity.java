@@ -1,4 +1,4 @@
-package com.example.petphil;
+package com.example.petphil.testDebug;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.petphil.R;
 
 public class BetaIndexActivity extends AppCompatActivity {
 
@@ -33,7 +35,7 @@ public class BetaIndexActivity extends AppCompatActivity {
             //2222 进入其他ui界面
             System.out.println("2222");
             //download test page
-            Intent intent = new Intent(getApplicationContext(),DownloadTest.class);
+            Intent intent = new Intent(getApplicationContext(), DownloadTest.class);
             startActivity(intent);
         }else if(code.equals("3333")){
             //定位测试
@@ -47,8 +49,8 @@ public class BetaIndexActivity extends AppCompatActivity {
         }else if(code.equals("service")){
             // service
             Log.d("code test","serivce test .. start..");
-            Intent intent = new Intent(getApplicationContext(),ServiceTest.class);
-            startActivity(intent);
+//            Intent intent = new Intent(getApplicationContext(),ServiceTest.class);
+//            startActivity(intent);
         }
         else{
             //

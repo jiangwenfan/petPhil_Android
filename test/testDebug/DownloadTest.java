@@ -1,10 +1,12 @@
-package com.example.petphil;
+package com.example.petphil.testDebug;
 
 import android.os.Bundle;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.petphil.R;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

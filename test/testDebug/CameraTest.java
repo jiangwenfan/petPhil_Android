@@ -1,4 +1,4 @@
-package com.example.petphil;
+package com.example.petphil.testDebug;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -10,13 +10,13 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.widget.ImageView;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 
+import com.example.petphil.R;
+
 import java.io.File;
 import java.io.IOException;
-import java.time.Instant;
 
 public class CameraTest extends AppCompatActivity {
     private static final int TAKE_PHOTO = 1;

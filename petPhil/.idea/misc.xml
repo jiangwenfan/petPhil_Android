@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/github/petPhil_Android/petPhil/app/src/main/res/layout/activity_camera_test.xml" value="0.1" />
+        <entry key="..\:/github/petPhil_Android/petPhil/app/src/main/res/layout/activity_dialog_chats.xml" value="0.1621376811594203" />
+        <entry key="..\:/github/petPhil_Android/petPhil/app/src/main/res/layout/activity_main.xml" value="0.10544904137235116" />
+        <entry key="..\:/github/petPhil_Android/petPhil/app/src/main/res/layout/activity_settings_main.xml" value="0.1621376811594203" />
+        <entry key="..\:/github/petPhil_Android/petPhil/app/src/main/res/layout/activity_user_info.xml" value="0.1621376811594203" />
+        <entry key="..\:/github/petPhil_Android/petPhil/app/src/main/res/layout/chats_item.xml" value="0.1621376811594203" />
+        <entry key="..\:/github/petPhil_Android/petPhil/app/src/main/res/layout/contacts_item.xml" value="0.2" />
+        <entry key="..\:/github/petPhil_Android/petPhil/app/src/main/res/layout/fragment_contacts.xml" value="0.10544904137235116" />
+        <entry key="..\:/github/petPhil_Android/petPhil/app/src/main/res/layout/fragment_me.xml" value="0.10544904137235116" />
+        <entry key="..\:/github/petPhil_Android/petPhil/app/src/main/res/layout/fragment_test.xml" value="0.1621376811594203" />
+        <entry key="..\:/github/petPhil_Android/petPhil/app/src/main/res/layout/item_messg_receive.xml" value="0.1621376811594203" />
+        <entry key="..\:/github/petPhil_Android/petPhil/app/src/main/res/layout/sendmessg_item.xml" value="0.1621376811594203" />
+        <entry key="..\:/github/petPhil_Android/petPhil/app/src/main/res/menu/menu1.xml" value="0.21770833333333334" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

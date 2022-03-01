@@ -1,10 +1,13 @@
-package com.example.petphil;
+package com.example.petphil.testDebug;
 
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.petphil.Contacts;
+import com.example.petphil.ContactsAdapter;
+import com.example.petphil.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +26,7 @@ public class TestPageActivity extends AppCompatActivity {
 //        listView.setAdapter(adapter);
 
         initContacts();
-        ContactsAdapter adapter = new ContactsAdapter(TestPageActivity.this,R.layout.contacts_item,contactsList);
+        ContactsAdapter adapter = new ContactsAdapter(TestPageActivity.this,R.layout.listview_item,contactsList);
 
         ListView listView = (ListView)findViewById(R.id.list_view);
         listView.setAdapter(adapter);

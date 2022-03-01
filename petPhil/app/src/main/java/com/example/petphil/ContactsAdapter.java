@@ -26,13 +26,13 @@ public class ContactsAdapter extends ArrayAdapter<Contacts> {
         Contacts contacts = getItem(position); //获取当前项的Contact实例
         View view = LayoutInflater.from(getContext()).inflate(resourceId,parent,false);
 
-        ImageView contactsImage = (ImageView)view.findViewById(R.id.contacts_image);
-        TextView contactsName = (TextView)view.findViewById(R.id.contacts_name);
-        TextView contactsDesc = (TextView)view.findViewById(R.id.contacts_desc);
-
-        contactsImage.setImageResource(contacts.getImageId());
-        contactsName.setText(contacts.getName());
-        contactsDesc.setText(contacts.getDesc());
+//        ImageView contactsImage = (ImageView)view.findViewById(R.id.contacts_image);
+//        TextView contactsName = (TextView)view.findViewById(R.id.contacts_name);
+//        TextView contactsDesc = (TextView)view.findViewById(R.id.contacts_desc);
+//
+//        contactsImage.setImageResource(contacts.getImageId());
+//        contactsName.setText(contacts.getName());
+//        contactsDesc.setText(contacts.getDesc());
 
         return view;
     }

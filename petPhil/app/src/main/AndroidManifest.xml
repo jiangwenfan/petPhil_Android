@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
@@ -16,18 +17,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PetPhil">
-        <service
-            android:name=".MyServiceTest"
-            android:enabled="true"
-            android:exported="true"></service>
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/actions" />
 
-        <activity android:name=".BetaIndexActivity" />
-        <activity android:name=".PasswordLoginActivity" />
-        <activity android:name=".AuthenticationCodeActivity" />
-        <activity android:name=".TestPageActivity" />
-        <activity android:name=".DownloadTest" />
-        <activity android:name=".CameraTest" />
-        <activity android:name=".ServiceTest"/>
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DialogChats"
+            android:exported="false" />
+        <activity
+            android:name=".ContactInfo"
+            android:exported="false" /> <!-- <service -->
+        <!-- android:name=".MyServiceTest" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true"></service> -->
+        <activity android:name=".testDebug.BetaIndexActivity" />
+        <activity android:name=".testDebug.PasswordLoginActivity" />
+        <activity android:name=".testDebug.AuthenticationCodeActivity" />
+        <activity android:name=".testDebug.TestPageActivity" />
+        <activity android:name=".testDebug.DownloadTest" />
+        <activity android:name=".testDebug.CameraTest" />
+        <activity android:name=".ServiceTest" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

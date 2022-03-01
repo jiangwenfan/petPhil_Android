@@ -1,4 +1,4 @@
-package com.example.petphil;
+package com.example.petphil.testDebug;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.petphil.R;
 
 public class AuthenticationCodeActivity extends AppCompatActivity {
     String phoneNumber;
