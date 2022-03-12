@@ -39,11 +39,14 @@
         android:layout_height="0dp"
         android:layout_weight="7">
         <TextView
+            android:id="@+id/tv_set"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="设置"
             android:textSize="30dp"
-            android:paddingLeft="10dp"/>
+            android:paddingLeft="10dp"
+            android:clickable="true"
+            />
     </LinearLayout>
 
 </LinearLayout>

@@ -3,6 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Administrator/Desktop/github/petPhil_Android/petPhil/app/src/main/res/layout/activity_add_contacts.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Administrator/Desktop/github/petPhil_Android/petPhil/app/src/main/res/layout/activity_contacts_info.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Administrator/Desktop/github/petPhil_Android/petPhil/app/src/main/res/layout/activity_demo.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Administrator/Desktop/github/petPhil_Android/petPhil/app/src/main/res/layout/activity_dialog_chats.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Administrator/Desktop/github/petPhil_Android/petPhil/app/src/main/res/layout/activity_login_code.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Administrator/Desktop/github/petPhil_Android/petPhil/app/src/main/res/layout/activity_login_index.xml" value="0.12006079027355623" />
+        <entry key="..\:/Users/Administrator/Desktop/github/petPhil_Android/petPhil/app/src/main/res/layout/activity_login_password.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Administrator/Desktop/github/petPhil_Android/petPhil/app/src/main/res/layout/activity_login_phone_number.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Administrator/Desktop/github/petPhil_Android/petPhil/app/src/main/res/layout/activity_login_verification_code.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Administrator/Desktop/github/petPhil_Android/petPhil/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Administrator/Desktop/github/petPhil_Android/petPhil/app/src/main/res/layout/activity_new_chats.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Administrator/Desktop/github/petPhil_Android/petPhil/app/src/main/res/layout/fragment_chats.xml" value="0.12006079027355623" />
+        <entry key="..\:/Users/Administrator/Desktop/github/petPhil_Android/petPhil/app/src/main/res/layout/fragment_contacts.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Administrator/Desktop/github/petPhil_Android/petPhil/app/src/main/res/layout/fragment_me.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Administrator/Desktop/github/petPhil_Android/petPhil/app/src/main/res/layout/listview_item.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Administrator/Desktop/github/petPhil_Android/petPhil/app/src/main/res/menu/menu1.xml" value="0.246875" />
+        <entry key="..\:/Users/Administrator/Desktop/github/petPhil_Android/petPhil/app/src/main/res/menu/menu_options.xml" value="0.246875" />
         <entry key="..\:/github/petPhil_Android/petPhil/app/src/main/res/layout/activity_camera_test.xml" value="0.1" />
         <entry key="..\:/github/petPhil_Android/petPhil/app/src/main/res/layout/activity_dialog_chats.xml" value="0.1621376811594203" />
         <entry key="..\:/github/petPhil_Android/petPhil/app/src/main/res/layout/activity_main.xml" value="0.10544904137235116" />

@@ -17,6 +17,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PetPhil">
+        <activity
+            android:name=".AddContacts"
+            android:exported="false" />
+        <activity
+            android:name=".NewChats"
+            android:exported="false" />
+        <activity
+            android:name=".userHandle.LoginCode"
+            android:exported="false" />
+        <activity
+            android:name=".userHandle.UserLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@xml/actions" />
@@ -29,23 +46,9 @@
             android:exported="false" />
         <activity
             android:name=".ContactInfo"
-            android:exported="false" /> <!-- <service -->
-        <!-- android:name=".MyServiceTest" -->
-        <!-- android:enabled="true" -->
-        <!-- android:exported="true"></service> -->
-        <activity android:name=".testDebug.BetaIndexActivity" />
-        <activity android:name=".testDebug.PasswordLoginActivity" />
-        <activity android:name=".testDebug.AuthenticationCodeActivity" />
-        <activity android:name=".testDebug.TestPageActivity" />
-        <activity android:name=".testDebug.DownloadTest" />
-        <activity android:name=".testDebug.CameraTest" />
-        <activity android:name=".ServiceTest" />
+            android:exported="false" />
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <provider

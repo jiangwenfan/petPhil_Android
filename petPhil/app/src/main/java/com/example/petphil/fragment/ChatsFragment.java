@@ -1,15 +1,18 @@
 package com.example.petphil.fragment;
 import androidx.fragment.app.Fragment;
 //import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 import androidx.annotation.Nullable;
 
+import com.example.petphil.DialogChats;
 import com.example.petphil.R;
 
 import java.util.ArrayList;
@@ -32,6 +35,7 @@ public class ChatsFragment extends Fragment {
         /*
         * 引入布局文件
         * */
+
 //        View view =  //引入布局文件
         return inflater.inflate(R.layout.fragment_chats,container,false); //返回view
     }
@@ -64,6 +68,20 @@ public class ChatsFragment extends Fragment {
 
         //把适配器设置给listview
         chats_lv.setAdapter(simpleAdapter);
+
+
+        chats_lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                //设置点击事件
+                Map<String,Object> map = mydata.get(i);
+                String title = (String)map.get("title");
+                //开启聊天对话框
+                Intent intent = new Intent(getActivity(), DialogChats.class);
+                intent.putExtra("friendName",title);
+                startActivity(intent);
+            }
+        });
 
     }
 

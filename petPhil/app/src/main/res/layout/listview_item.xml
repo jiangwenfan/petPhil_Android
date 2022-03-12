@@ -6,8 +6,8 @@
     android:padding="8dp">
 
   <ImageView
-      android:layout_width="100dp"
-      android:layout_height="100dp"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
       android:id="@+id/contacts_iv"
       android:scaleType="centerCrop"
       android:src="@drawable/ic_launcher_background"/>
@@ -33,6 +33,6 @@
         android:ellipsize="end"
         android:maxLines="2"
         android:text="用户搁浅内容"
-        android:textSize="20dp" />
+        android:textSize="15dp" />
 
 </RelativeLayout>
