@@ -1,16 +1,19 @@
 package com.example.petphil.fragment;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.petphil.ContactInfo;
 import com.example.petphil.R;
 
 import java.util.ArrayList;
@@ -47,6 +50,8 @@ public class ContactsFragment  extends Fragment {
             map.put("content","个性签名"+i);
             mydata.add(map);
         }
+        //获取真实数据
+        JsonApi.get
 
         //把数据放和适配器关联
         simpleAdapter = new SimpleAdapter(getActivity(),
@@ -59,5 +64,18 @@ public class ContactsFragment  extends Fragment {
 
         //把适配器设置给listview
         fr_contacts_lv.setAdapter(simpleAdapter);
+
+        //设置item点击事件
+        fr_contacts_lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Map<String,Object> map = mydata.get(i);
+                String title = (String)map.get("title");
+                //开启一个用户详细信息的actiity
+                Intent intent = new Intent(getActivity(), ContactInfo.class);
+                intent.putExtra("friendName",title);
+                startActivity(intent);
+            }
+        });
     }
 }

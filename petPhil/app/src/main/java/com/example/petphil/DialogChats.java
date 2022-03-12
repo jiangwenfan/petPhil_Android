@@ -27,9 +27,9 @@ public class DialogChats extends AppCompatActivity {
 
         //从上一个Integer意图拿到用户昵称
         Intent intent = getIntent();
-        String userName = intent.getStringExtra("userName"); //拿到从上activity传过来的用户昵称
-        userid = intent.getStringExtra("userid"); //拿到从上Activity传过来的user id
-        friendid = intent.getStringExtra("friendid"); //拿到好友id
+        String userName = intent.getStringExtra("friendName"); //拿到从上activity传过来的好友昵称
+        //userid = intent.getStringExtra("userid"); //拿到从上Activity传过来的user id
+        //friendid = intent.getStringExtra("friendid"); //拿到好友id
 
         //把用户名更新到对话框中
         tv_userName = findViewById(R.id.tv_userName);
