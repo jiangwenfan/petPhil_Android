@@ -20,7 +20,7 @@ import android.widget.Toast;
 import com.example.petphil.fragment.ChatsFragment;
 import com.example.petphil.fragment.ContactsFragment;
 import com.example.petphil.fragment.MeFragment;
-import com.example.petphil.fragment.Test;
+
 import com.example.petphil.userHandle.UserLogin;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {

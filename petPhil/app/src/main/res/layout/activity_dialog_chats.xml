@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -10,10 +11,13 @@
         android:layout_weight="1"
         android:gravity="center"
         android:orientation="horizontal">
-        <Button
+        <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="返回"/>
         <TextView
             android:id="@+id/tv_userName"
             android:gravity="center"
@@ -29,11 +33,10 @@
         android:layout_height="0dp"
         android:layout_weight="8"
         android:orientation="vertical">
-        <FrameLayout
+        <ListView
+            android:id="@+id/dialog_listview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </FrameLayout>
+            android:layout_height="match_parent"/>
     </LinearLayout>
 
     <LinearLayout
@@ -42,20 +45,24 @@
         android:layout_weight="1"
         android:orientation="horizontal"
         android:padding="2dp">
+
         <EditText
             android:id="@+id/et_messageContent"
             android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="8"
-            android:background="@drawable/ic_launcher_background"
-            android:layout_height="match_parent"/>
-        <Button
+            android:background="#B0C4DE"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <TextView
             android:id="@+id/bt_send"
             android:layout_width="0dp"
             android:layout_weight="2"
             android:layout_marginLeft="5dp"
             android:onClick="sendMessg"
+            android:textSize="21dp"
             android:layout_height="match_parent"
-            android:text="send"/>
+            android:gravity="center"
+            android:text="发送"/>
     </LinearLayout>
 
 </LinearLayout>

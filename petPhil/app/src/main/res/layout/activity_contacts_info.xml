@@ -11,19 +11,16 @@
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:paddingRight="10dp">
-        <Button
-            android:layout_width="0dp"
-            android:layout_weight="2"
-            android:layout_height="match_parent"
-            android:text="返回"/>
+
         <TextView
             android:layout_width="0dp"
             android:layout_weight="7"
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
+            android:id="@+id/tv_userRemarks"
             android:text="用户备注"
             android:gravity="center"
-            android:background="@drawable/ic_launcher_background"/>
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -35,22 +32,23 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/tv_userImg"
             android:padding="20dp"
             >
             <ImageView
-                android:id="@+id/img"
+                android:id="@+id/iv_img"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@mipmap/ic_launcher"/>
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/img"
+                android:layout_toRightOf="@id/iv_img"
                 android:padding="10dp"
                 android:id="@+id/user">
 
                 <TextView
-                    android:id="@+id/friendName"
+                    android:id="@+id/tv_friendName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="用户昵称"
@@ -58,7 +56,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/friendName"
+                    android:layout_toRightOf="@id/tv_friendName"
                     android:layout_marginLeft="10dp"
                     android:textSize="20dp"
                     android:text="男"/>
@@ -68,8 +66,9 @@
                 android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/img"
+                android:layout_toRightOf="@id/iv_img"
                 android:layout_below="@id/user"
+                android:id="@+id/tv_userId"
                 android:textSize="20dp"
                 android:text="用户id"/>
         </RelativeLayout>

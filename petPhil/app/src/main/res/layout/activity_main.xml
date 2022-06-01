@@ -31,7 +31,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Chats"/>
+                android:text="聊天"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -46,7 +46,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Contacts"/>
+                android:text="联系人"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -59,7 +59,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Me"/>
+                android:text="自己"/>
         </RelativeLayout>
 
     </LinearLayout>

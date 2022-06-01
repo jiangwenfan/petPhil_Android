@@ -3,22 +3,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/logo"/>
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@mipmap/logo"/>-->
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp">
 
         <ImageView
             android:id="@+id/security"
-            android:layout_width="59dp"
-            android:layout_height="49dp"
+            android:layout_width="49dp"
+            android:layout_height="39dp"
             android:src="@mipmap/security" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:text="验证码"
             android:textColor="@color/black"
             android:textSize="30dp"
@@ -28,6 +31,10 @@
         android:id="@+id/et_LoginCode"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="25dp"
         android:hint="4位验证码"/>
     <TextView
         android:id="@+id/tv_sendStatusMessage"
@@ -36,15 +43,19 @@
         android:text=""
         android:textSize="15dp"
         android:gravity="center"/>
-    <Button
-        android:id="@+id/bt_againSend"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="重新发送"/>
+<!--    <Button-->
+<!--        android:id="@+id/bt_againSend"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="重新发送"/>-->
     <Button
         android:id="@+id/bt_ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="18dp"
+        android:layout_marginTop="30dp"
+        android:textSize="17dp"
         android:onClick="ok"
-        android:text="确定"/>
+        android:text="确   定"/>
 </LinearLayout>

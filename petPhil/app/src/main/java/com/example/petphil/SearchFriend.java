@@ -5,14 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class AddContacts extends AppCompatActivity {
+public class SearchFriend extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_search_friend);
+        setContentView(R.layout.activity_add_contacts);
 
-        ActionBar bar = getSupportActionBar();
-        bar.setTitle("添加好友");
+
+
     }
 }

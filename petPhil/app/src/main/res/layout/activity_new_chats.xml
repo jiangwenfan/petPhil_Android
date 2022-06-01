@@ -2,13 +2,49 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:orientation="vertical">
+
+
+    <EditText
+        android:layout_margin="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="搜索联系人"/>
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:textColor="#00CED1"
+        android:text="选择一个群"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:textColor="#00CED1"
+        android:text="加入一个私人群聊"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:textColor="#00CED1"
+        android:text="联系人"/>
+
+    <TextView
+        android:layout_margin="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="选择多个好友，创建一个群聊"
-        android:textColor="@color/black"
-        android:textSize="40dp" />
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:background="#DCDCDC"
+        android:padding="15dp"
+        android:textColor="#1E90FF"
+        android:text="搜索"/>
+
 </LinearLayout>
